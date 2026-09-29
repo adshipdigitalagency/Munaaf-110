@@ -1,26 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="site-title">ગુજરાતી વેપારી ( Gujrati Trader )®</title>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '977539647930193');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=977539647930193&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -31,191 +12,201 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1568817477657809');
+fbq('init', '1063842149821961');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1568817477657809&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1063842149821961&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-  <!-- Fonts + Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VIP Trader</title>
+<style>
+  :root {
+    --bg: #0f1729;
+    --card: #1c2436;
+    --border: #2e3850;
+    --text: #ffffff;
+    --muted: #9aa3b5;
+    --accent: #22c55e;
+    --btn-from: #5b6cf0;
+    --btn-to: #0ab4d6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { min-height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  .card {
+    width: 100%;
+    max-width: 440px;
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 32px;
+    padding: 40px 24px 36px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,.35);
+  }
+  /* ===== Animated logo hero ===== */
+  .hero {
+    display: flex; align-items: center; justify-content: center;
+    gap: 12px;
+    margin: 0 auto 26px;
+  }
+  .logo-wrap { position: relative; width: 148px; height: 148px; flex: none; }
+  .logo {
+    position: relative; z-index: 2;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    overflow: hidden;
+    background: #000;
+    animation: breathe 3.2s ease-in-out infinite;
+  }
+  .logo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.1); display: block; }
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0; padding: 0;
-      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-      color: #fff;
-    }
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-      background: url('https://www.transparenttextures.com/patterns/cubes.png');
-    }
-    .glass-box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 20px;
-      padding: 40px 25px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-      backdrop-filter: blur(10px);
-      max-width: 650px;
-      width: 100%;
-    }
-    .logo img {
-      width: 120px; height: 120px;
-      border-radius: 50%;
-      border: 3px solid #ffcc00;
-      object-fit: cover;
-      margin-bottom: 20px;
-      transition: transform 0.3s ease;
-    }
-    .logo img:hover {
-      transform: scale(1.08);
-    }
-    h1 {
-      font-weight: 700;
-      color: #ffcc00;
-      font-size: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .crown {
-      color: gold;
-      animation: shine 2s infinite linear;
-    }
-    @keyframes shine {
-      0% { opacity: 0.6; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.3); }
-      100% { opacity: 0.6; transform: scale(1); }
-    }
-    h2 {
-      font-weight: 600;
-      margin-top: 30px;
-      color: #00ffb3;
-    }
-    p {
-      color: #ddd;
-      margin: 10px 0;
-      font-size: 16px;
-    }
-    a.cta-btn {
-      background: linear-gradient(90deg, #0072ff, #00c6ff);
-      padding: 14px 40px;
-      border-radius: 50px;
-      font-size: 18px;
-      color: #fff;
-      font-weight: 600;
-      display: inline-block;
-      margin: 18px 0;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
-      animation: pulse 1.5s infinite;
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(0,198,255,0.7); }
-      70% { box-shadow: 0 0 0 20px rgba(0,198,255,0); }
-      100% { box-shadow: 0 0 0 0 rgba(0,198,255,0); }
-    }
-    .highlight {
-      color: #00ff88;
-      font-weight: 600;
-    }
-    .stats {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .stat-box {
-      background: rgba(255,255,255,0.08);
-      padding: 12px 20px;
-      border-radius: 12px;
-      font-size: 14px;
-      font-weight: 600;
-      color: #fff;
-    }
-    .benefits {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin: 20px 0;
-    }
-    .benefit-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      padding: 12px;
-      border-radius: 12px;
-      text-align: left;
-      font-size: 15px;
-    }
-    footer {
-      margin-top: 20px;
-      font-size: 13px;
-      color: #aaa;
-    }
-  </style>
+  /* rotating gold + green ring */
+  .ring {
+    position: absolute; z-index: 1; inset: -9px; border-radius: 50%;
+    background: conic-gradient(from 0deg, #f5c542, rgba(245,197,66,0) 30%, #22c55e 55%, rgba(34,197,94,0) 80%, #f5c542);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+            mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+    animation: spin 4s linear infinite;
+  }
+  /* green pulse waves */
+  .pulse {
+    position: absolute; z-index: 0; inset: 0; border-radius: 50%;
+    border: 2px solid rgba(34,197,94,.7);
+    animation: ripple 3s ease-out infinite;
+  }
+  .pulse.p2 { animation-delay: 1.5s; }
+
+  /* live candlesticks on both sides */
+  .candles { display: flex; align-items: flex-end; gap: 5px; height: 96px; width: 44px; flex: none; }
+  .c {
+    position: relative; width: 7px; height: var(--h);
+    color: #22c55e;
+    transform-origin: bottom center;
+    animation: grow var(--t) ease-in-out var(--d) infinite;
+  }
+  .c::before { content: ""; position: absolute; left: 50%; top: -9px; bottom: -7px; width: 2px; margin-left: -1px; background: currentColor; }
+  .c::after  { content: ""; position: absolute; inset: 0; background: currentColor; border-radius: 2px; }
+  .c.red   { color: #ef4444; }
+  .c.flip  { animation: grow var(--t) ease-in-out var(--d) infinite, flip calc(var(--t) * 2) steps(1) var(--d) infinite; }
+
+  @keyframes spin    { to { transform: rotate(360deg); } }
+  @keyframes breathe { 0%,100% { box-shadow: 0 0 14px rgba(245,197,66,.25); } 50% { box-shadow: 0 0 30px rgba(34,197,94,.55); } }
+  @keyframes ripple  { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.55); opacity: 0; } }
+  @keyframes grow    { 0%,100% { transform: scaleY(1); } 35% { transform: scaleY(1.45); } 70% { transform: scaleY(.7); } }
+  @keyframes flip    { 0% { color: #22c55e; } 50% { color: #ef4444; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .logo, .ring, .pulse, .c { animation: none !important; }
+    .pulse { display: none; }
+  }
+  h1 { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 18px; }
+  .lines p { font-size: 1.1rem; line-height: 1.6; color: #e7ebf3; }
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 17px 20px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--btn-from), var(--btn-to));
+    color: #fff; text-decoration: none;
+    font-size: 1.3rem; font-weight: 700;
+    box-shadow: 0 8px 24px rgba(10,180,214,.25);
+    transition: transform .15s ease;
+  }
+  .btn:active { transform: scale(.98); }
+  .btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .btn svg { width: 30px; height: 30px; flex: none; }
+  .redirect { margin-top: 22px; font-size: 1.05rem; color: var(--muted); min-height: 1.5em; }
+  .foot { max-width: 440px; margin-top: 28px; text-align: center; color: var(--muted); font-size: .9rem; line-height: 1.7; }
+  .foot b { color: var(--accent); font-weight: 700; font-size: 1.05rem; }
+  @media (max-width: 380px) {
+    h1 { font-size: 2rem; }
+    .lines p { font-size: 1rem; }
+    .btn { font-size: 1.15rem; }
+  }
+</style>
 </head>
 <body>
 
-  <!-- ✅ Easy Variables -->
-  <script>
-    const SITE_NAME = "ગુજરાતી વેપારી ( Gujrati Trader )™";       // 🔄 Brand Name
-    const SITE_IMAGE = "gujj.jpeg";              // 🔄 Logo/Image path or URL
-    const TELEGRAM_LINK = "https://t.me/+gf7maQAEiaZmZDQ1"; // 🔄 Telegram Link / Website Link
-  </script>
+<main class="card">
+  <div class="hero">
+    <div class="candles" aria-hidden="true">
+      <i class="c red flip"  style="--h:34px;--t:2.2s;--d:0s"></i>
+      <i class="c"           style="--h:48px;--t:2.7s;--d:.3s"></i>
+      <i class="c red"       style="--h:40px;--t:2.4s;--d:.9s"></i>
+      <i class="c flip"      style="--h:64px;--t:3s;--d:.5s"></i>
+    </div>
+    <div class="logo-wrap">
+      <span class="pulse" aria-hidden="true"></span>
+      <span class="pulse p2" aria-hidden="true"></span>
+      <span class="ring" aria-hidden="true"></span>
+      <div class="logo"><img src="mehta.jpg"></div>
+    </div>
+    <div class="candles" aria-hidden="true">
+      <i class="c"           style="--h:60px;--t:2.6s;--d:.2s"></i>
+      <i class="c red flip"  style="--h:42px;--t:2.3s;--d:.8s"></i>
+      <i class="c"           style="--h:70px;--t:3.1s;--d:.1s"></i>
+      <i class="c red"       style="--h:50px;--t:2.5s;--d:.6s"></i>
+    </div>
+  </div>
+  <h1 style="font-size:1.9rem; line-height:1.25;">VIP TRADER OFFICIAL<br><span style="font-size:1.3rem; color:#e7ebf3; font-weight:700;">( जय महाराष्ट्र ! )</span></h1>
+  <div class="lines">
+    <p>Start Earning with Expert Calls 🔥</p>
+    <p>Trusted by 12,000+ Traders 🌍</p>
+    <p>Join our Channel for daily updates ✅</p>
+  </div>
 
-  <section class="hero">
-    <div class="glass-box">
-      <div class="logo">
-        <img id="site-logo" alt="Brand Logo">
-      </div>
-      <h1 id="site-heading"></h1>
-      <p>✅ Trusted by thousands of learners</p>
+  <a id="joinBtn" class="btn" href="#">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#fff"/><path fill="#3b82f6" d="M10.5 23.6l24.6-9.5c1.1-.4 2.1.3 1.7 1.9l-4.2 19.7c-.3 1.4-1.1 1.7-2.3 1.1l-6.4-4.7-3.1 3c-.3.3-.6.6-1.3.6l.5-6.5 11.8-10.7c.5-.5-.1-.7-.8-.3l-14.6 9.2-6.3-2c-1.4-.4-1.4-1.4.3-2.1z"/></svg>
+    <span>Join Now Free</span>
+    <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#fff"/><path fill="#3b82f6" d="M10.5 23.6l24.6-9.5c1.1-.4 2.1.3 1.7 1.9l-4.2 19.7c-.3 1.4-1.1 1.7-2.3 1.1l-6.4-4.7-3.1 3c-.3.3-.6.6-1.3.6l.5-6.5 11.8-10.7c.5-.5-.1-.7-.8-.3l-14.6 9.2-6.3-2c-1.4-.4-1.4-1.4.3-2.1z"/></svg>
+  </a>
 
-      <div class="stats">
-        <div class="stat-box">24/7 Updates</div>
-        <div class="stat-box">Free to Join</div>
-        <!-- <div class="stat-box">7 496 subscribers</div> -->
-      </div>
+  <p class="redirect" id="redirect" aria-live="polite"></p>
+</main>
 
-      <a id="cta-btn-1" class="cta-btn">
-        <i class="fa-brands fa-telegram me-1"></i> Join on Telegram
-      </a>
+<footer class="foot">
+  <p>This channel is for educational and informational purposes only.</p>
+</footer>
 
-      <div class="benefits">
-        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Market Insights & Discussions</div>
-        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Learn with Experts</div>
-        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Practical Strategies</div>
-        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> India's Most Trusted Stock Market Community</div>
-        
-      </div>
+<script>
+  // ====== YAHAN APNA TELEGRAM LINK DAALO ======
+  var TELEGRAM_LINK = "https://t.me/+_ppJIuAigLU5ZjZl";
+  var REDIRECT_SECONDS = 10;     // auto-redirect timer (0 = band)
+  // ============================================
 
-     
+  var btn = document.getElementById("joinBtn");
+  var msg = document.getElementById("redirect");
+  btn.href = TELEGRAM_LINK;
 
-     
-  </section>
+  var linkReady = TELEGRAM_LINK.indexOf("YOUR_CHANNEL") === -1;
 
-  <!-- Auto Apply Variables -->
-  <script>
-    document.getElementById("site-title").innerText = SITE_NAME;
-    document.getElementById("site-heading").innerHTML = 
-      `<i class="fa-solid fa-crown crown"></i> ${SITE_NAME} <i class="fa-solid fa-crown crown"></i>`;
-    document.getElementById("site-logo").src = SITE_IMAGE;
-    document.getElementById("cta-btn-1").href = TELEGRAM_LINK;
-    document.getElementById("cta-btn-2").href = TELEGRAM_LINK;
-  </script>
-
+  if (REDIRECT_SECONDS > 0 && linkReady) {
+    var left = REDIRECT_SECONDS;
+    var tick = function () {
+      msg.textContent = "Redirecting in " + left + " seconds...";
+      if (left <= 0) { window.location.href = TELEGRAM_LINK; return; }
+      left--;
+      setTimeout(tick, 1000);
+    };
+    tick();
+  }
+</script>
 </body>
 </html>
+>
